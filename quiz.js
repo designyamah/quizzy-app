@@ -176,10 +176,10 @@ function showResults() {
   quizHeader.innerHTML = `${
     score >= questions.length ? "Brains indeed 👍 " : "Up your game 😜"
   }`;
-  quizQuestionHeader.innerHTML = `Your Score: ${score}/${questions.length} `;
+  quizQuestionHeader.innerHTML = `My Brains Score: ${score}/${questions.length} `;
   quizQuestionsList.innerHTML = "";
   progressBar.style.width = "100%"; // Full progress bar when completed
-  button.textContent = "Restart Quiz";
+  button.innerHTML = `Test my Brains Again <ion-icon name="refresh-outline"></ion-icon>`;
   button.removeEventListener("click", nextQuestion);
   button.addEventListener("click", restartQuiz);
 }
@@ -188,7 +188,7 @@ function showResults() {
 function restartQuiz() {
   currentQuestionIndex = 0;
   score = 0;
-  button.textContent = "Next";
+  button.innerHTML = `Next <ion-icon name="arrow-forward-outline"></ion-icon>`;
   button.removeEventListener("click", restartQuiz);
   button.addEventListener("click", nextQuestion);
   showQuestion();
