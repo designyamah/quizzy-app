@@ -26,10 +26,14 @@ const questions = [
   },
 ];
 
+//keep track of the currently selected question
 let currentQuestionIndex = 0;
+//keep track of the scores
 let score = 0;
 
+//select all the required dom elements
 const quizHeader = document.querySelector(".quiz-header");
+const quizQuestionCounter = document.querySelector(".quiz-question-counter");
 const quizQuestionHeader = document.querySelector(".quiz-question-header");
 const quizQuestionsList = document.querySelector(".quiz-questions-list");
 const progressBar = document.querySelector(".progress-bar");
@@ -60,7 +64,7 @@ function showQuestion() {
   });
 
   // Update progress
-  quizHeader.innerHTML = `Question ${currentQuestionIndex + 1}/${
+  quizQuestionCounter.innerHTML = `Question ${currentQuestionIndex + 1}/${
     questions.length
   }`;
   updateProgressBar();
@@ -111,7 +115,10 @@ function nextQuestion() {
 
 // Function to show results at the end
 function showResults() {
-  quizHeader.innerHTML = `Quiz Completed!`;
+  quizQuestionCounter.innerHTML = `Quiz Completed!`;
+  quizHeader.innerHTML = `${
+    score >= questions.length ? "Brains indeed 👍 " : "Up your game 😜"
+  }`;
   quizQuestionHeader.innerHTML = `Your Score: ${score}/${questions.length} `;
   quizQuestionsList.innerHTML = "";
   progressBar.style.width = "100%"; // Full progress bar when completed
@@ -128,6 +135,7 @@ function restartQuiz() {
   button.removeEventListener("click", restartQuiz);
   button.addEventListener("click", nextQuestion);
   showQuestion();
+  quizHeader.innerHTML = `Got the brains 🤯, lets see 👇`;
 }
 
 // Attach event listener to Next button

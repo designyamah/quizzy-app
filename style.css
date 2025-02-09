@@ -28,7 +28,7 @@ main {
   align-items: center;
 }
 
-h1 {
+.quiz-header {
   font-size: 30px;
   font-weight: bold;
   color: #7b45a0;
