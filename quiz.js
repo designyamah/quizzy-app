@@ -172,7 +172,7 @@ function nextQuestion() {
 
 // Function to show results at the end
 function showResults() {
-  quizQuestionCounter.innerHTML = `Quiz Completed!`;
+  quizQuestionCounter.innerHTML = `Quiz Completed! Stay Jiggy`;
   quizHeader.innerHTML = `${
     score >= questions.length ? "Brains indeed 👍 " : "Up your game 😜"
   }`;
