@@ -12,6 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  animation: fadeIn 1.5s ease-in-out, bounceIn 1s ease;
 }
 
 main {
@@ -25,6 +26,15 @@ main {
   flex-direction: column;
   gap: 40px;
   align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #7b45a0;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
 }
 
 .quiz-card {
@@ -99,4 +109,30 @@ ion-icon {
 
 button:hover {
   background-color: #7b45a0;
+}
+
+/* //for the love of animation 🙃 */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
