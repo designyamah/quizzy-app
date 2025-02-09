@@ -5,7 +5,7 @@ const questions = [
     correctAnswer: "Paris",
   },
   {
-    question: "What is HTML",
+    question: "What is HTML?",
     options: [
       "Hyper Test Markup",
       "Hyper Test Markup Language",
@@ -15,14 +15,71 @@ const questions = [
     correctAnswer: "Hyper Text Markup Language",
   },
   {
-    question: "What is CSS",
+    question: "What is CSS?",
     options: [
       "Hyper Test Markup",
       "Hyper Test Markup Language",
-      "Cascading Styleheet",
+      "Cascading Stylesheet",
       "Hyper Text Markup Language",
     ],
-    correctAnswer: "Cascading Styleheet",
+    correctAnswer: "Cascading Stylesheet",
+  },
+  {
+    question:
+      "Which programming language is known as the 'mother of all languages'?",
+    options: ["C", "Python", "Java", "Assembly"],
+    correctAnswer: "C",
+  },
+  {
+    question: "Which symbol is used for comments in JavaScript?",
+    options: ["//", "/* */", "#", "--"],
+    correctAnswer: "//",
+  },
+  {
+    question: "What does HTTP stand for?",
+    options: [
+      "HyperText Transfer Protocol",
+      "Hyper Transfer Text Protocol",
+      "Hyperlink Text Transfer Protocol",
+      "High Tech Transfer Protocol",
+    ],
+    correctAnswer: "HyperText Transfer Protocol",
+  },
+  {
+    question: "What does JS stand for?",
+    options: ["Java Style", "JavaScript", "Just Script", "Jumping Syntax"],
+    correctAnswer: "JavaScript",
+  },
+  {
+    question: "Which of the following is a JavaScript framework?",
+    options: ["React", "Bootstrap", "Django", "Laravel"],
+    correctAnswer: "React",
+  },
+  {
+    question: "Which CSS property controls text size?",
+    options: ["font-size", "text-size", "size", "font-style"],
+    correctAnswer: "font-size",
+  },
+  {
+    question: "Which company developed JavaScript?",
+    options: ["Microsoft", "Apple", "Netscape", "Google"],
+    correctAnswer: "Netscape",
+  },
+
+  {
+    question: "Which of the following is NOT a JavaScript data type?",
+    options: ["Number", "String", "Boolean", "Character"],
+    correctAnswer: "Character",
+  },
+  {
+    question: "Which array method removes the last element from an array?",
+    options: ["pop()", "shift()", "slice()", "splice()"],
+    correctAnswer: "pop()",
+  },
+  {
+    question: "Which keyword is used to declare a variable in JavaScript?",
+    options: ["var", "let", "const", "All of the above"],
+    correctAnswer: "All of the above",
   },
 ];
 
