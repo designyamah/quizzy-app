@@ -150,7 +150,7 @@ function nextQuestion() {
   const selectedOption = document.querySelector(".options.selected");
 
   if (!selectedOption) {
-    alert("Please select an answer before proceeding!");
+    alert("Please test my Brains before proceeding 🧪");
     return;
   }
 
@@ -172,7 +172,7 @@ function nextQuestion() {
 
 // Function to show results at the end
 function showResults() {
-  quizQuestionCounter.innerHTML = `Quiz Completed! Stay Jiggy`;
+  quizQuestionCounter.innerHTML = "Brain Test Completed!";
   quizHeader.innerHTML = `${
     score >= questions.length ? "Brains indeed 👍 " : "Up your game 😜"
   }`;
